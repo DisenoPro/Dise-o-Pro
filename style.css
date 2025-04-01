@@ -59,27 +59,33 @@ footer {
 }
 
 .detalles-producto {
-    display: flex; /* Coloca los elementos hijos (imágenes e info) en fila */
-    flex-direction: row;
+    display: flex;
+    flex-direction: column; /* Apilamos verticalmente las imágenes y la info */
     align-items: flex-start;
-    gap: 20px; /* Espacio entre las imágenes y la información */
+    gap: 20px;
+}
+
+.grid-imagenes {
+    display: grid; /* Convertimos el contenedor en una cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* Definimos 4 columnas de igual ancho */
+    gap: 10px; /* Espacio entre las celdas de la cuadrícula */
 }
 
 .imagen-producto {
-    max-width: 150px; /* Establece un ancho máximo para las imágenes */
+    max-width: 100%; /* Las imágenes se ajustarán al ancho de su celda */
     height: auto;
 }
 
 .imagen-producto img {
-    width: 100%; /* La imagen ocupa el ancho de su contenedor (.imagen-producto) */
+    width: 100%;
     height: auto;
-    display: block; /* Evita espacios extra debajo de la imagen */
+    display: block;
     border-radius: 4px;
-    margin-bottom: 0; /* Removemos el margen inferior para la disposición en fila */
+    margin-bottom: 0; /* Opcional: puedes añadir un margen si lo deseas */
 }
 
 .info-producto {
-    flex-grow: 1; /* Permite que la información ocupe el espacio restante */
+    /* La información se mostrará debajo de la cuadrícula de imágenes */
 }
 
 .especificaciones h2,
