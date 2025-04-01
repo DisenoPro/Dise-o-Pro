@@ -48,3 +48,17 @@ footer {
     padding: 20px;
     text-align: center;
 }
+
+#camiseta_estampada {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
