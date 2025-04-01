@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DISEÑO PRO Manizales</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .producto-boton {
+            display: block; /* Para que ocupe todo el ancho del contenedor */
+            border: none;
+            padding: 0;
+            margin: 0;
+            background: none;
+            text-align: left; /* Alinea el contenido a la izquierda como antes */
+            cursor: pointer;
+        }
+
+        .producto {
+            border: 1px solid #ccc; /* Mantén el borde si lo deseas */
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .producto img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Evita espacio extra debajo de la imagen */
+            margin-bottom: 10px;
+        }
+
+        .producto h3 {
+            margin-top: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,100 +46,136 @@
         <h2>Nuestros Productos</h2>
 
         <div class="producto">
-            <img src="imagenes/camiseta 1.jpg" alt="Camiseta Estampada">
-            <h3>Camiseta Estampada</h3>
-            <p>Disponible en varias tallas.</p>
+            <button class="producto-boton" onclick="window.location.href='camiseta_estampada.html'">
+                <img src="imagenes/camiseta 1.jpg" alt="Camiseta Estampada">
+                <h3>Camiseta Estampada</h3>
+                <p>Disponible en varias tallas.</p>
+            </button>
         </div>
 
         <div class="producto">
-            <img src="imagenes/mug5.jpg" alt="Taza para Sublimación">
-            <h3>Taza para Sublimación</h3>
-            <p>Ideal para regalos únicos y personalizados.</p>
+            <button class="producto-boton" onclick="window.location.href='taza_sublimacion.html'">
+                <img src="imagenes/mug5.jpg" alt="Taza para Sublimación">
+                <h3>Taza para Sublimación</h3>
+                <p>Ideal para regalos únicos y personalizados.</p>
+            </button>
         </div>
 
         <div class="producto">
-            <img src="imagenes/gorras.jpg" alt="Gorra Personalizada">
-            <h3>Gorra Personalizada</h3>
-            <p>Personaliza tu gorra con tu logo o diseño favorito.</p>
+            <button class="producto-boton" onclick="window.location.href='gorra_personalizada.html'">
+                <img src="imagenes/gorras.jpg" alt="Gorra Personalizada">
+                <h3>Gorra Personalizada</h3>
+                <p>Personaliza tu gorra con tu logo o diseño favorito.</p>
+            </button>
         </div>
 
         <div class="producto">
-            <img src="camisetaspng/2.png" alt="Camiseta de Rock">
-            <h3>Camiseta de Rock</h3>
-            <p>Diseño de banda de rock clásico.</p>
+            <button class="producto-boton" onclick="window.location.href='camiseta_rock_clasico.html'">
+                <img src="camisetaspng/2.png" alt="Camiseta de Rock">
+                <h3>Camiseta de Rock</h3>
+                <p>Diseño de banda de rock clásico.</p>
+            </button>
         </div>
 
         <div class="producto">
-            <img src="camisetaspng/14.png" alt="Camiseta de Rock">
-            <h3>Camiseta de Rock</h3>
-            <p>Diseño de banda de rock moderno.</p>
+            <button class="producto-boton" onclick="window.location.href='camiseta_rock_moderno.html'">
+                <img src="camisetaspng/14.png" alt="Camiseta de Rock">
+                <h3>Camiseta de Rock</h3>
+                <p>Diseño de banda de rock moderno.</p>
+            </button>
         </div>
 
         <div class="producto">
-            <img src="camisetaspng/07.png" alt="Camiseta de Rock">
-            <h3>Camiseta de Rock</h3>
-            <p>Muestra tu pasión por tu banda favorita.</p>
+            <button class="producto-boton" onclick="window.location.href='camiseta_rock_pasion.html'">
+                <img src="camisetaspng/07.png" alt="Camiseta de Rock">
+                <h3>Camiseta de Rock</h3>
+                <p>Muestra tu pasión por tu banda favorita.</p>
+            </button>
         </div>
 
         <div class="producto">
-            <img src="imagenes/ta.jpeg" alt="Taza Personaliza">
-            <h3>Taza Personalizada</h3>
-            <p>pocillo mug de cerámica de alta calidad, idealpara tus fechas importantes para sublimación con tus diseños favoritos.</p>
+            <button class="producto-boton" onclick="window.location.href='taza_personalizada_1.html'">
+                <img src="imagenes/ta.jpeg" alt="Taza Personaliza">
+                <h3>Taza Personalizada</h3>
+                <p>pocillo mug de cerámica de alta calidad, idealpara tus fechas importantes para sublimación con tus diseños favoritos.</p>
+            </button>
         </div>
 
         <div class="producto">
-            <img src="imagenes/mes.jpeg" alt="Taza Personaliza">
-            <h3>Mug Personalizado</h3>
-            <p>pocillo mug de cerámica de alta calidad, idealpara tus fechas importantes para sublimación con tus diseños favoritos.</p>
+            <button class="producto-boton" onclick="window.location.href='mug_personalizado.html'">
+                <img src="imagenes/mes.jpeg" alt="Taza Personaliza">
+                <h3>Mug Personalizado</h3>
+                <p>pocillo mug de cerámica de alta calidad, idealpara tus fechas importantes para sublimación con tus diseños favoritos.</p>
+            </button>
         </div>
 
         <div class="producto">
-            <img src="imagenes/cmp.png" alt="Camiseta de algodòn">
-            <h3>Camiseta de Algodón - camisetas en algodon peinado</h3>
-            <p>Camisetas de algodón suave y resistente, perfecta para sublimar con logos o imágenes tambien en DTF.</p>
+            <button class="producto-boton" onclick="window.location.href='camiseta_algodon.html'">
+                <img src="imagenes/cmp.png" alt="Camiseta de algodòn">
+                <h3>Camiseta de Algodón - camisetas en algodon peinado</h3>
+                <p>Camisetas de algodón suave y resistente, perfecta para sublimar con logos o imágenes tambien en DTF.</p>
+            </button>
         </div>
 
         <div class="producto">
-            <img src="imagenes/cojin.jpeg" alt="cojin">
-            <h3>Cojìn</h3>
-            <p>Cojín suave y confortable, listo para ser personalizado con tus diseños únicos.</p></div>
-
-        <div class="producto"><img src="imagenes/medias.jpeg" alt="medias sublimadas ">
-            <h3>medias sublimadas </h3>
-            <p> listo para ser personalizado con tus diseños únicos.</p>
+            <button class="producto-boton" onclick="window.location.href='cojin_personalizado.html'">
+                <img src="imagenes/cojin.jpeg" alt="cojin">
+                <h3>Cojìn</h3>
+                <p>Cojín suave y confortable, listo para ser personalizado con tus diseños únicos.</p>
+            </button>
         </div>
 
-            <div class="producto"><img src="imagenes/manillas.jpg" alt="manillas para cualquier evento">
+        <div class="producto">
+            <button class="producto-boton" onclick="window.location.href='medias_sublimadas.html'">
+                <img src="imagenes/medias.jpeg" alt="medias sublimadas ">
+                <h3>medias sublimadas </h3>
+                <p> listo para ser personalizado con tus diseños únicos.</p>
+            </button>
+        </div>
+
+        <div class="producto">
+            <button class="producto-boton" onclick="window.location.href='manillas_evento.html'">
+                <img src="imagenes/manillas.jpg" alt="manillas para cualquier evento">
                 <h3>Manillas para cualquier evento</h3>
                 <p>Manillas en cinta satin sublimadas a full color.</p>
-            </div>
-
-        <div class="producto"><img src="imagenes/llaveros.jpeg" alt="llaveros en acrilico o en pvc ">
-            <h3>Llaveros en acrilico o en pvc </h3>
-            <p>Llaveros con tu foto favorita ideal para recordatorios .</p>
+            </button>
         </div>
 
-        <div class="producto"><img src="imagenes/agendas.jpg" alt="agendas ">
-            <h3>Agendas </h3>
-            <p>Se elaboran con lo que el cliente lo desee cualquier diseño.</p>
+        <div class="producto">
+            <button class="producto-boton" onclick="window.location.href='llaveros_personalizados.html'">
+                <img src="imagenes/llaveros.jpeg" alt="llaveros en acrilico o en pvc ">
+                <h3>Llaveros en acrilico o en pvc </h3>
+                <p>Llaveros con tu foto favorita ideal para recordatorios .</p>
+            </button>
         </div>
 
-        <div class="producto"><img src="imagenes/PAPAS.jpg" alt="agendas ">
-            <h3>Personalizaciòn en empaques de mecato </h3>
-            <p>Se elaboran las mejores personalizaciones de empaques con el diseño que el cliente elija
+        <div class="producto">
+            <button class="producto-boton" onclick="window.location.href='agendas_personalizadas.html'">
+                <img src="imagenes/agendas.jpg" alt="agendas ">
+                <h3>Agendas </h3>
+                <p>Se elaboran con lo que el cliente lo desee cualquier diseño.</p>
+            </button>
+        </div>
+
+        <div class="producto">
+            <button class="producto-boton" onclick="window.location.href='empaques_personalizados.html'">
+                <img src="imagenes/PAPAS.jpg" alt="agendas ">
+                <h3>Personalizaciòn en empaques de mecato </h3>
+                <p>Se elaboran las mejores personalizaciones de empaques con el diseño que el cliente elija</p>
+            </button>
+        </div>
 
     </section>
 
     <section id="contacto">
-        
-    </section>
-
-    <footer>
         <h2>Contáctanos</h2>
         <p>¿Tienes alguna pregunta o deseas realizar un pedido?</p>
         <p>Nuestro número de celular: 3234939938</p>
         <p>Estamos ubicados en: DISEÑO PRO MANIZALES CALDAS</p>
-        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Tu Empresa de Sublimación</p>
     </footer>
 
     <script src="script.js"></script>
