@@ -1,5 +1,4 @@
-CSS
-
+/* Estilos generales del sitio */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -15,6 +14,14 @@ header {
     text-align: center;
 }
 
+footer {
+    background-color: #fa5c00;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para la página principal (index.html) */
 #productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -42,23 +49,76 @@ header {
     margin-bottom: 5px;
 }
 
-footer {
-    background-color: #fa5c00;
-    color: #000000;
+/* Estilos para la página de detalles del producto (camiseta_estampada.html) */
+.contenedor-detalles {
     padding: 20px;
-    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.detalles-producto {
+    display: flex; /* Coloca los elementos hijos (imágenes e info) en fila */
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre las imágenes y la información */
 }
 
 .imagen-producto {
-    max-width: 100%;
+    max-width: 150px; /* Establece un ancho máximo para las imágenes */
     height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
 }
 
 .imagen-producto img {
-    max-width: 100%;
+    width: 100%; /* La imagen ocupa el ancho de su contenedor (.imagen-producto) */
     height: auto;
+    display: block; /* Evita espacios extra debajo de la imagen */
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 0; /* Removemos el margen inferior para la disposición en fila */
+}
+
+.info-producto {
+    flex-grow: 1; /* Permite que la información ocupe el espacio restante */
+}
+
+.especificaciones h2,
+.opciones-compra h3 {
+    margin-top: 15px;
+    color: #fa5c00;
+}
+
+.especificaciones ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.especificaciones li {
+    margin-bottom: 8px;
+}
+
+.especificaciones strong {
+    font-weight: bold;
+}
+
+.opciones-compra p {
+    margin-bottom: 15px;
+}
+
+.boton-contacto {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-contacto:hover {
+    background-color: #0056b3;
 }
